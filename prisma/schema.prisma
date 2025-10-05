@@ -1,0 +1,41 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  //shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model chat {
+  chatId    Int       @id @default(autoincrement())
+  message   String    @db.VarChar(500)
+  foto      Bytes?
+  userId    Int
+  createdAt DateTime? @default(now()) @db.Timestamp(6)
+  user      user_data @relation(fields: [userId], references: [userId])
+}
+
+model news {
+  newsId    Int      @id @default(autoincrement())
+  title     String   @db.VarChar(255)
+  content   String   @db.VarChar(5000)
+  foto      Bytes?
+  author    String?
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+}
+
+model user_data {
+  userId    Int      @id(map: "User_pkey") @default(autoincrement())
+  firstname String   @db.VarChar(50)
+  lastname  String   @db.VarChar(50)
+  position  String   @db.VarChar(100)
+  email     String   @unique(map: "email") @db.VarChar(100)
+  password  String   @db.VarChar(100)
+  pin       Int
+  foto      Bytes?
+  createdAt DateTime @db.Date
+  pushtoken String?  @db.VarChar(255)
+  chats     chat[]
+}
