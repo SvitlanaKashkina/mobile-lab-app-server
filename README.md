@@ -1,10 +1,9 @@
 # Mobile Lab App Server
 
 **Mobile Lab App Server** ist die Backend-Komponente der Mobile Lab App.  
-Das Projekt basiert auf einer MVC-Architektur mit zusätzlicher WebSocket-Schicht.
-Der Server bietet REST-APIs, Echtzeit-Chat über WebSockets, Datenbankanbindung an PostgreSQL über Prisma ORM, Benutzer-Authentifizierung, Push-Benachrichtigungen und E-Mail-Feedback.
-Der Client-Teil (Frontend) befindet sich in einem separaten Repository "mobile-lab-app".
-Dieses Projekt wurde als Teil meines Portfolios entwickelt.
+Das Projekt basiert auf einer MVC-Architektur mit WebSocket-Unterstützung und bietet REST-APIs, Echtzeit-Chat, Datenbankanbindung, Authentifizierung, Push-Benachrichtigungen und E-Mail-Feedback.
+Der Client (Frontend) befindet sich in einem separaten Repository: "mobile-lab-app".
+Dieses Projekt ist Teil meines Portfolios.
 
 ---
 
@@ -20,25 +19,21 @@ Dieses Projekt wurde als Teil meines Portfolios entwickelt.
 ---
 
 ## Architektur
-Das Projekt basiert auf einer **klassischen Client-Server-Architektur**:  
+Client-Server-Modell: 
 - Server (Backend): Node.js + Express, organisiert nach MVC (Routes, Controller, Prisma-Models)
 - Datenbank: PostgreSQL
-- Kommunikation mit dem Frontend: REST API und WebSockets
+- Kommunikation mit Frontend: REST API & WebSockets
   
 ---
 
 ## Technologien
-- JavaScript
-- Node.js  
-- Express.js  
-- Prisma ORM  
-- PostgreSQL  
+- JavaScript, Node.js, Express.js 
+- Prisma ORM, PostgreSQL 
 - WebSockets / Socket.IO  
 - Nodemailer (für E-Mail-Feedback)  
-- HTTPS / SSL-Zertifikat
+- HTTPS / SSL
 - React Native (Expo)  
-- Visual Studio Code  
-- GitHub  
+- Visual Studio Code, GitHub  
 
 ---
 
