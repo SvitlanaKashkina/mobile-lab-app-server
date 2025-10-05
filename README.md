@@ -1,9 +1,9 @@
 # Mobile Lab App Server
 
 **Mobile Lab App Server** ist die Backend-Komponente der Mobile Lab App.  
-Das Projekt basiert auf einer **MVC-Architektur** mit zusätzlicher WebSocket-Schicht.  
-Der Server bietet REST-APIs, Echtzeit-Chat über WebSockets, Datenbankanbindung an PostgreSQL über Prisma ORM, Benutzer-Authentifizierung, Push-Benachrichtigungen und E-Mail-Feedback.  
- Es handelt sich um den Server-Teil (Backend). Der Client-Teil (Frontend) wird in einem separaten Repository "mobile-lab-app" gezeigt und beschrieben. 
+Das Projekt basiert auf einer MVC-Architektur mit zusätzlicher WebSocket-Schicht.
+Der Server bietet REST-APIs, Echtzeit-Chat über WebSockets, Datenbankanbindung an PostgreSQL über Prisma ORM, Benutzer-Authentifizierung, Push-Benachrichtigungen und E-Mail-Feedback.
+Der Client-Teil (Frontend) befindet sich in einem separaten Repository "mobile-lab-app".
 Dieses Projekt wurde als Teil meines Portfolios entwickelt.
 
 ---
@@ -12,7 +12,7 @@ Dieses Projekt wurde als Teil meines Portfolios entwickelt.
 - REST-APIs für die Mobile App  
 - Echtzeit-Chat über WebSockets (Socket.IO)  
 - Benutzerregistrierung und -authentifizierung  
-- Datenbankanbindung an PostgreSQL über Prisma ORM (CRUD)  
+- CRUD-Datenbankzugriff auf PostgreSQL über Prisma ORM  
 - Push-Benachrichtigungen  
 - E-Mail-Feedback-Funktion
 - Sichere Kommunikation über HTTPS (SSL-Zertifikat)
@@ -21,22 +21,22 @@ Dieses Projekt wurde als Teil meines Portfolios entwickelt.
 
 ## Architektur
 Das Projekt basiert auf einer **klassischen Client-Server-Architektur**:  
-- **Server (Backend):** Node.js + Express, organisiert nach MVC (Routes, Controller, Prisma-Models)  
-- **Datenbank:** PostgreSQL  
-- Verbindung mit Client-Teil (Frontend)  über Node.js + Express (REST API, WebSockets)
+- Server (Backend): Node.js + Express, organisiert nach MVC (Routes, Controller, Prisma-Models)
+- Datenbank: PostgreSQL
+- Kommunikation mit dem Frontend: REST API und WebSockets
   
 ---
 
 ## Technologien
 - JavaScript
-- React Native (Expo)
 - Node.js  
 - Express.js  
 - Prisma ORM  
 - PostgreSQL  
 - WebSockets / Socket.IO  
 - Nodemailer (für E-Mail-Feedback)  
-- HTTPS / SSL-Zertifikat   
+- HTTPS / SSL-Zertifikat
+- React Native (Expo)  
 - Visual Studio Code  
 - GitHub  
 
