@@ -14,7 +14,7 @@ Dieses Projekt wurde als Teil meines Portfolios entwickelt.
 - Benutzerregistrierung und -authentifizierung  
 - Datenbankanbindung an PostgreSQL über Prisma ORM (CRUD)  
 - Push-Benachrichtigungen  
-- E-Mail-Feedback-Funktion  
+- E-Mail-Feedback-Funktion
 - Sichere Kommunikation über HTTPS (SSL-Zertifikat)
 
 ---
@@ -23,20 +23,20 @@ Dieses Projekt wurde als Teil meines Portfolios entwickelt.
 Das Projekt basiert auf einer **klassischen Client-Server-Architektur**:  
 - **Server (Backend):** Node.js + Express, organisiert nach MVC (Routes, Controller, Prisma-Models)  
 - **Datenbank:** PostgreSQL  
-- **Echtzeit-Funktionalität:** WebSockets (Socket.IO) für den Chat  
-- **Sichere Kommunikation:** HTTPS mit SSL-Zertifikat  
-
+- Verbindung mit Client-Teil (Frontend)  über Node.js + Express (REST API, WebSockets)
+  
 ---
 
 ## Technologien
+- JavaScript
+- React Native (Expo)
 - Node.js  
 - Express.js  
 - Prisma ORM  
 - PostgreSQL  
 - WebSockets / Socket.IO  
 - Nodemailer (für E-Mail-Feedback)  
-- HTTPS / SSL-Zertifikat  
-- JavaScript (ES6)  
+- HTTPS / SSL-Zertifikat   
 - Visual Studio Code  
 - GitHub  
 
@@ -51,4 +51,4 @@ Für Karrierechancen, Zusammenarbeit oder Fragen zum Projekt können Sie mich ge
 ---
 
 ## Tags
-#NodeJS #Express #JavaScript #Prisma #PostgreSQL #WebSockets #SocketIO #Backend #Server #MobileApp #ChatApp #PushNotifications #Portfolio
+#NodeJS #Express #JavaScript #Prisma #PostgreSQL #WebSockets #SocketIO #Backend #Server #MobileApp #ChatApp #PushNotifications #Portfolio #Node.js #Visual Studio Code #SSL-Zertifikat #Nodemailer
